@@ -7,7 +7,7 @@
 
 html {
     font-family: Helvetica, Arial, sans-serif;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;            /*Hiệu ứng chạy animation trong toàn bộ thẻ html*/
 }
 
 /* 
@@ -181,7 +181,7 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url("/lava-project/assets/img/slider/pic1.jpg") top center / cover no-repeat;
+    background: url('/lava-project/assets/img/slider/pic1.jpg') top center / cover no-repeat;
 }
 
 #slider .text-content{       /*Định dạng thẻ text-content*/
@@ -358,32 +358,32 @@ html {
     color: #000;
 }
 
-.box-info-area {
+.box-info-area {                    /*Định dạng thể box-info-area*/
     margin-top: 42px;
 }
 
-.contact-info {
+.contact-info {                   /*Định dạng thẻ contact-info*/
     font-size: 18px;
     line-height: 1.6;
     color: rgb(145, 72, 84);
 }
 
-.contact-info i[class*="ti-"] {
+.contact-info i[class*="ti-"] {        /*Định dạng thẻ có class ti trong thẻ i thuộc class contact-info*/
     width: 30px;
     display: inline-block;
 }
 
-.contact-form {
+.contact-form {                     /*Định dạng thẻ contact-form*/
     font-style: 15px;
 }
 
-.contact-form .form-control {
+.contact-form .form-control {       /*Định dạng thẻ form-control*/
     padding: 10px;
     border: 1px solid #ccc;
     width: 100%;
 }
 
-.form-submit-btn {
+.form-submit-btn {                  /*Định dạng thẻ form-submit-btn*/
     background-color: #EBA3AF;
     color: #fff;
     border: none;
@@ -394,21 +394,22 @@ html {
     font-weight: 550;
 }
 
-.form-submit-btn:hover {
+.form-submit-btn:hover {        /*Hover vào thẻ form-submit-btn*/
     opacity: 1;
 }
 
-.memory-area {
+.memory-area {                      /*Định dạng thẻ memory-area*/
     background-color: #FFE8DF;
     min-height: 800px;
 }
 
-.memory-list {
+.memory-list {                  /*Định dạng thẻ memory-list*/
     padding-top: 12px;
 }
 
-.col-fourth-1 {                     /*Định dạng col-fourth*/
-    width: 220px;           /*Thuộc tính tạo chiều rộng, với hàm calc để chia thành 4 cột trong khoảng width*/
+.col-fourth-1,
+.col-fourth-2 {                     /*Định dạng col-fourth*/
+    width: 220px;          
     background-color: #fff;
     margin-left: 4px;
     margin-right: 4px;
@@ -416,37 +417,32 @@ html {
 }
 
 .col-fourth-2 {                     /*Định dạng col-fourth*/
-    margin-top: 50px;
-    width: 220px;           /*Thuộc tính tạo chiều rộng, với hàm calc để chia thành 4 cột trong khoảng width*/
-    background-color: #fff;
-    margin-left: 4px;
-    margin-right: 4px;
-    padding-top: 8px;
+    margin-top: 15px;
 }
 
-#memory .memory-pic {
+#memory .memory-pic {          /*Định dạng thẻ memory-pic*/
     width: 100%;
     min-height: 150px;
     max-height: 240px;
 }
 
-#memory .memory-body {
+#memory .memory-body {             /*Định dạng thẻ memory-body*/
     min-height: 28px;
 }
 
-.memory-body p {
+.memory-body p {                /*Định dạng thẻ p trong memory-body*/
     padding-top: 4px;
     font-size: 14px;
     font-style: italic;
     opacity: 0.6;
 }
 
-.memory-pic:hover {
+.memory-pic:hover {             /*Định dạng hover thẻ memory-pic */
     opacity: 0.6;
     cursor: pointer;
 }
 
-.memory-body p:hover {
+.memory-body p:hover {          /*Định dạng hover thẻ p memory-body*/
     opacity: 1;
     cursor: pointer;
 }
@@ -455,42 +451,43 @@ html {
 
 
 /* -------------------------------------------------------------------------------------------------------- */
-#footer {
+#footer {                           /*Định dạng thẻ footer*/
     padding: 64px 16px;
     text-align: center;
 }
 
-#footer .social-list {
+#footer .social-list {              /*Định dạng thẻ social-list*/
     font-size: 24px;
 }
 
-#footer .social-list a {
+#footer .social-list a {             /*Định dạng thẻ a trong thẻ social-list*/
     color: rgba(0, 0, 0, 0.6);
     text-decoration: none;
 }
 
-#footer .copyright a:hover,
-#footer .social-list a:hover {
-    color: rgba(0, 0, 0, 0.4);
-    
-}
-
-#footer .copyright {
+#footer .copyright {                /*Định dạng thẻ copyright*/
     font-size: 15px;
     color: rgba(0, 0, 0, 0.6);
 }
 
-#footer .copyright a {
+#footer .copyright a {                 /*Định dạng thẻ a trong thẻ copyright*/
     color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a:hover,                /*Định dạng hover thẻ a trong copyright và thẻ a trong social-list*/
+#footer .social-list a:hover {
+    color: rgba(0, 0, 0, 0.4);
+    
 }
 /* -------------------------------------------------------------------------------------------------------- */
 
+
 /* -------------------------------------------------------------------------------------------------- */
-.modal.open {
+.modal.open {               /*Định dạng thẻ chứa class modal và class open*/
     display: flex;           /*Để thẻ con căn ở vị trí giữa khung*/
 }
 
-.modal {
+.modal {                    /*Định dạng thẻ modal*/
     position: fixed;
     top: 0;
     left: 0;
@@ -502,7 +499,7 @@ html {
     justify-content: center;
 }
 
-.modal-container {
+.modal-container {              /*Định dạng thẻ modal-container*/
     background-color: #fff;
     width: 900px;
     max-width: calc(100% - 32px);
@@ -511,7 +508,7 @@ html {
     animation: modalFadeIn ease .6s;
 }
 
-.modal-header {
+.modal-header {             /*Định dạng thẻ modal-header*/
     display: flex;
     background-color: #F4DFD0;
     text-align: center;
@@ -523,7 +520,7 @@ html {
     font-size: 30px;
 }
 
-.modal-icon1 {
+.modal-icon1 {              /*Định dạng thẻ modal-icon1*/
     position: absolute;
     top: 0;
     right: 0;
@@ -533,26 +530,26 @@ html {
     opacity: 0.8;
 }
 
-.modal-icon1:hover {
+.modal-icon1:hover {        /*Định dạng hover thẻ modal-icon1*/
     opacity: 1;
 }
 
-.modal-icon2 {
+.modal-icon2 {             /*Định dạng thẻ modal-icon2*/
     margin-right: 16px;
 }
 
-.modal-body {
+.modal-body {               /*Định dạng thẻ modal-body*/
     padding: 16px;
 }
 
-.modal-label {
+.modal-label {              /*Định dạng thẻ modal-label*/
     display: block;
     font-style: italic;
     font-size: 15px;
     margin-bottom: 12px;
 }
 
-.modal-input1 {
+.modal-input1 {               /*Định dạng thẻ modal-input1*/
     padding: 10px;
     border: 1px solid #ccc;
     width: 100%;
@@ -560,7 +557,7 @@ html {
     margin-bottom: 24px;
 }
 
-#text-input {
+#text-review {                /*Định dạng thẻ text-review*/
     padding: 10px;
     border: 1px solid #ccc;
     width: 100%;
@@ -570,7 +567,7 @@ html {
     resize: none;
 }
 
-#post {
+#post {                     /*Định dạng thẻ post*/
     font-size: 15px;
     text-transform: uppercase;
     background-color: #F4DFD0;
@@ -579,27 +576,29 @@ html {
     padding: 18px;
     border: none;
     border-radius: 20px;
+    font-weight: 600;
 }
 
-#post:hover {
+#post:hover {             /*Định dạng hover thẻ post*/
     opacity: 0.8;
     background-color: #000;
     color: #fff;
+    cursor: pointer;
 }
 
-.modal-footer {
+.modal-footer {             /*Định dạng thẻ modal-footer*/
     text-align: right;
     font-size: 15px;
     padding: 16px;
 }
 
-.modal-footer a {
+.modal-footer a {           /*Định dạng thẻ a trong modal-footer*/
     color: #2196f3;
 }
 /* -------------------------------------------------------------------------------------------------- */
 
 
-@keyframes modalFadeIn {
+@keyframes modalFadeIn {      /*Animation chuyển modal vào khi click*/
     from {
         opacity: 0;
         transform: translateY(-140px);
