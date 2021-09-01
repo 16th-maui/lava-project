@@ -8,6 +8,7 @@
     <link rel="icon" href="./assets/web-icon/love_heart_1352.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/externalstyles.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
 <!-- Khởi tạo main -->
@@ -38,7 +39,10 @@
                 <div class="search-button">
                     <i class="search-icon ti-search"></i>
                 </div>
-            <!-- Kết thúc khởi tạo thanh tìm kiếm: Search -->
+            <!-- Khởi tạo thanh menu: Menu-Btn (only on Tablet and Mobile) -->
+                <div id="mb-menu" class="mb-menu-btn">
+                    <i class="menu-icon ti-menu"></i>
+                </div>
         </div>
         <!-- ---------------------------------------------------------------------------------------------------------- -->
         
@@ -279,6 +283,34 @@
             </div>
         </div>
     </div>
+    
+<!-- Khởi tạo tác vụ mở/đóng menu header for Tablet and Mobile -->
+    <script>
+        var header = document.getElementById('header')
+        var mobileMenu = document.getElementById('mb-menu')
+        var headerHeight = header.clientHeight;
+        
+        // Tương tác đóng mở Menu
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null; 
+            }
+        }
+        
+        // Tự động đóng khi chọn Menu xong
+        var menuItems = document.querySelectorAll('#navi li a[href*="#"]')
+        
+        for (var i=0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i]
+
+            menuItem.onclick = function() {
+                header.style.height = null;
+            }
+        }
+    </script>
     
 <!-- Khởi tạo tác vụ mở/đóng modal -->
     <script>

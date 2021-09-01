@@ -157,9 +157,17 @@ html {
     font-size: 14px;
 }
 
+#header .mb-menu-btn,
 #header .search-button {       /*Khởi tạo thanh tìm kiếm*/
     float: right;
     padding: 0 24px;
+}
+
+#header .mb-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
 }
 
 #header .search-button:hover,                /*Lớp giả định dạng khi hover thẻ search-icon*/
@@ -169,6 +177,13 @@ html {
     cursor: pointer;
 }
 
+#header .mb-menu-btn:hover,
+#header .mb-menu-btn:hover .menu-icon {
+    background-color: #fff;
+    color: rgb(235, 163, 175);
+}
+
+#header .menu-icon,
 #header .search-icon {           /*Định dạng icon search*/
     color: #fff;
     line-height: 46px;
@@ -221,7 +236,8 @@ html {
 
 #content .content-section {         /*Định dạng thẻ content-section*/
     width: 800px;
-    padding: 72px 0;
+    max-width: 100%;
+    padding: 72px 16px;
     margin-left: auto;
     margin-right: auto;
 }
