@@ -361,7 +361,6 @@ html {
     border: none;
     cursor: pointer;
     font-weight: 550;
-    -webkit-appearance: none;
 }
 
 .location-button:hover {            /*Định dạng hover thẻ location-button*/
@@ -412,6 +411,7 @@ html {
     cursor: pointer;
     opacity: 0.8;
     font-weight: 550;
+    -webkit-appearance: none;
 }
 
 .form-submit-btn:hover {        /*Hover vào thẻ form-submit-btn*/
