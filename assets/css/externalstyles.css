@@ -411,6 +411,7 @@ html {
     cursor: pointer;
     opacity: 0.8;
     font-weight: 550;
+    appearance: none;
     -webkit-appearance: none;
 }
 
