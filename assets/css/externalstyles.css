@@ -81,9 +81,6 @@ html {
 
 
 /* Main */
-#main {
-
-}
 
 /* -------------------------------------------------------------------------------------------------------- */
 #header {                  /*Định dạng header*/
@@ -230,9 +227,6 @@ html {
 
 
 /* -------------------------------------------------------------------------------------------------------- */
-#content {
-
-}
 
 #content .content-section {         /*Định dạng thẻ content-section*/
     width: 800px;
@@ -367,6 +361,7 @@ html {
     border: none;
     cursor: pointer;
     font-weight: 550;
+    -webkit-appearance: none;
 }
 
 .location-button:hover {            /*Định dạng hover thẻ location-button*/
