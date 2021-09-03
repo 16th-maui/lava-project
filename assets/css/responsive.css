@@ -53,6 +53,14 @@
 
 /* Mobile Responsive */
 @media(max-width:740px) {
+    .s-col-full {
+        width: 100%;
+    }
+
+    .mt-65 {
+        margin-top: -65px;
+    }
+
     #header {
         overflow: hidden;
     }
@@ -88,5 +96,17 @@
 
     #slider .text-content {
         display: none;
+    }
+
+    #content .moment-pic {
+        width: 60%;
+    }
+
+    #travel .location-img {
+        height: 290px;
+    }
+
+    #memory .col-fourth-1, .col-fourth-2 {
+        width: 190px;
     }
 }
