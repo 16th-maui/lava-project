@@ -48,6 +48,7 @@
 
     #contact .form-control {
         padding: 15px;
+        font-size: 17px;
     }
 
     #footer .social-list {
@@ -94,7 +95,17 @@
     }
 
     #slider .text-content {
+        bottom: 100px;
+        padding: 0 50px;
+        text-align: center;
+    }
+
+    #slider .text-heading {
         display: none;
+    }
+
+    #slider .text-box {
+        font-size: 14px;
     }
 
     #content .moment-pic {
