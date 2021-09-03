@@ -114,6 +114,11 @@
         height: 320px;
     }
 
+    #travel .location-button {
+        font-size: 17px;
+        font-style: italic;
+    }
+    
     #memory .col-fourth-1, .col-fourth-2 {
         width: 190px;
     }
@@ -123,6 +128,7 @@
     }
 
     #contact .form-submit-btn {
-        line-height: 32px;
+        line-height: 24px;
+        font-size: 17px;
     }
 }
