@@ -53,12 +53,16 @@
 
 /* Mobile Responsive */
 @media(max-width:740px) {
+    .s-full-width,
     .s-col-full {
-        width: 100%;
+        width: 100% !important;
     }
 
+    .s-mt-8 {
+        margin-top: 8px !important;
+    }
     .mt-65 {
-        margin-top: -65px;
+        margin-top: -65px !important;
     }
 
     #header {
@@ -102,11 +106,19 @@
         width: 60%;
     }
 
+    #travel .location-desc {
+        min-height: 65px;
+    }
+
     #travel .location-img {
-        height: 290px;
+        height: 320px;
     }
 
     #memory .col-fourth-1, .col-fourth-2 {
         width: 190px;
+    }
+
+    #contact .contact-form {
+        margin-top: 16px;
     }
 }
