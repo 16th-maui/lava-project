@@ -304,10 +304,15 @@
         var menuItems = document.querySelectorAll('#navi li a[href*="#"]')
         
         for (var i=0; i < menuItems.length; i++) {
-            var menuItem = menuItems[i]
-
-            menuItem.onclick = function() {
-                header.style.height = null;
+            var menuItem = menuItems[i];
+            
+            menuItem.onclick = function(event) {
+                var menu2Level = this.nextElementSibling && this.nextElementSibling.classList.contains('subnavi');
+                if(menu2Level) {
+                    event.preventDefault();
+                } else {
+                    header.style.height = null;
+                }
             }
         }
     </script>
