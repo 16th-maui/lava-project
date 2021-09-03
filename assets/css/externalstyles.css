@@ -389,6 +389,15 @@ html {
     display: inline-block;
 }
 
+.contact-info a {
+    color: #0911aa;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
+}
+
 .contact-form {                     /*Định dạng thẻ contact-form*/
     font-style: 15px;
 }
