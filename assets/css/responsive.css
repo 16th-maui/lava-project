@@ -121,4 +121,8 @@
     #contact .contact-form {
         margin-top: 16px;
     }
+
+    #contact .form-submit-btn {
+        line-height: 32px;
+    }
 }
